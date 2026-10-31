@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+  <meta name="theme-color" content="#b7e4ff">
+  <meta name="description" content="豆豆乐园：给三四岁小朋友的点一点小游戏。吹泡泡、找动物、数一数、涂颜色。不用登录，没有输赢。">
+  <meta name="apple-mobile-web-app-title" content="豆豆乐园">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>豆豆乐园</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="world" aria-hidden="true">
+    <div class="sun-wrap"><div class="sun-rays"></div><div class="sun"></div></div>
+    <div class="cloud cloud-a"></div>
+    <div class="cloud cloud-b"></div>
+    <div class="cloud cloud-c"></div>
+    <div class="hill hill-back"></div>
+    <div class="hill"></div>
+  </div>
+  <div id="app">
+    <header>
+      <div id="header-left"></div>
+      <div id="header-center"></div>
+      <div class="header-right">
+        <button type="button" id="btn-sound" class="icon-btn" aria-pressed="true" aria-label="声音开着"></button>
+        <div id="star-pill" class="star-pill">
+          <span id="star-ico" aria-hidden="true"></span>
+          <span id="star-count">0</span>
+        </div>
+      </div>
+    </header>
+    <main id="main" tabindex="-1"></main>
+  </div>
+  <div id="fx" aria-hidden="true"></div>
+  <div id="live" class="sr" aria-live="polite"></div>
+  <noscript>请打开浏览器的 JavaScript，豆豆乐园才能玩。</noscript>
+  <script src="js/game.js"></script>
+</body>
+</html>
